@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+/* Responsive Layout Project */
+
+/* --- Base Element Styles ---*/
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Aclonica', sans-serif;
+	line-height: 1.5;
+	color: #3a3a3a;
+	background-color: #F3F3F3;
+}
+a {
+	color: #000000;
+}
+
+p {
+	font-size: 1em;
+}
+
+h2 {
+	margin-top: 20px;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ---- Navigation ---- */
+.name {
+	font-size: 1.50em;
+	margin: 0; /*removes default to and bottom margins form h1 and collpasing margin behavior*/
+}
+
+.main-nav {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #000;
+}
+a:hover {
+	background-color: lightgreen;
+}
+.footer-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.footer-nav {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* ---- Layout Containers ---- */
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.main-nav {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+.main-nav {
+	text-align: center;
+	padding: 1em 0;
+}
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.image {
+	width: 350px;
+}
+
+.title {
+	font-weight: bold;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.info {
+	text-align: center;
+}
+.main-footer {
+	text-align: center;
+	padding: 1em 0;
+}
+
+/* -- Media Queries --*/
+
+/*  Target viewport sizes less than 320*/
+@media (max-width: 320px){
+	
+	header {
+		text-align: center;
+		margin-bottom: 2.5rem;
+	}
+	h2 {
+		font-size: 1em;
+	}
+	.main-nav a {
+		padding: 6px 0;
+		background: #E9C8C8;
+		margin: .2em 0;
+	}
+	.name {
+		margin-bottom: 0;
+	}
+	.image {
+		max-width: 75%;
+	}
+	.contact {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	
+	.background-col {
+		background-color: lightcoral;
+	 }
+	.col {
+		padding-bottom: 2em;
+	}
+	
+	.footer-nav {
+	display: none;
+	}
+	.hr {
+		display: none;
+	}
+	.name-footer {
+		float:left;
+	}
+	.top {
+		float: right;
+	}
+	.top {
+		padding-top: 1.3em;
+		font-weight: bold;
+	}
+	/* ---- Float clearfix ---- */
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	}
+ /*-- Target viewport sizes 768 and wider --*/
+@media (min-width: 768px){
+	
+	nav li {
+		display: inline-block;
+	}
+	.main-nav {
+		padding-bottom: 2em;
+	}
+	.name {
+		text-align: center;
+	}
+	
+	.image {
+		float: right;
+		width: 50%;
+		padding-bottom: 1.6em
+	}
+	
+	.intro {
+		float: left;
+		width: 50%;
+		padding-right: 1.5em;
+		padding-left: 1em
+	}
+	.background-col {
+		background-color: #FAFAFA;
+	}
+	/*---Columns ---*/
+	.col {
+		float: right;
+		padding-left: .45em; /* space between the two boxes */
+		padding-right: .45em;
+		width: 50%;
+	}
+	.info {
+		padding-right: .50em;
+		padding-left: .50em;
+		margin-right: 1em;
+		margin-lrft: 1em;
+	}
+	.col {
+		padding-bottom: 2em;
+	}
+	.contact {
+		text-align: center;
+		padding-left: 20%;
+		padding-right: 20%; 
+	}
+	
+	.name-footer {
+		float: left;
+	}
+	.footer-nav {
+		float: right;
+	}
+	
+	.top {
+	display: none;
+}
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
+}
+
+/* Target a viewport range wider than 1024px  */
+
+@media (min-width: 1024px) {
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.main-header {
+		position: relative;
+	}
+	.main-nav {
+		position: absolute;
+		top: 0px;
+		right: 65px;	
+	}
+	.name {
+		position: absolute;
+		top: 20px;
+		left: 65px;
+	}
+	.intro {
+		margin-top: 5%;
+	}
+	.image {
+		margin-top: 5%;
+	}
+	.row {
+		width: 33.33%;
+	}
+	/* ---- Float clearfix ---- */
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
