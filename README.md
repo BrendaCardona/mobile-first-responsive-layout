@@ -1,1 +1,1 @@
-[DEMO] (https://github.com/BrendaCardona/mobile-first-responsive-layout/)
+[DEMO] (https://brendacardona.github.io/mobile-first-responsive-layout/)
